@@ -22,7 +22,7 @@ function Login() {
 
       const data = await response.json();
 
-      localStorage.setItem("token", "rahul");
+      localStorage.setItem("token", data.token);
       navigate("/dashboard");
     } catch (error) {
       console.log("error");
